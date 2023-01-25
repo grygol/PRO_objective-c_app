@@ -14,6 +14,10 @@
 		BA633D712981953B0073763C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA633D702981953B0073763C /* Assets.xcassets */; };
 		BA633D742981953B0073763C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA633D722981953B0073763C /* LaunchScreen.storyboard */; };
 		BA633D772981953B0073763C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA633D762981953B0073763C /* main.m */; };
+		BA633D7F2981981D0073763C /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = BA633D7E2981981D0073763C /* Product.m */; };
+		BA7A61D429819DF900DC135D /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7A61D229819DF900DC135D /* TableViewCell.m */; };
+		BA7A61D529819DF900DC135D /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA7A61D329819DF900DC135D /* TableViewCell.xib */; };
+		BA7A61DD2981A9B800DC135D /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7A61DC2981A9B800DC135D /* Cart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,13 @@
 		BA633D732981953B0073763C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA633D752981953B0073763C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA633D762981953B0073763C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA633D7D2981958D0073763C /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		BA633D7E2981981D0073763C /* Product.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		BA7A61D129819DF900DC135D /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		BA7A61D229819DF900DC135D /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		BA7A61D329819DF900DC135D /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		BA7A61DB2981A9B700DC135D /* objc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "objc-Bridging-Header.h"; sourceTree = "<group>"; };
+		BA7A61DC2981A9B800DC135D /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +77,19 @@
 				BA633D67298195370073763C /* SceneDelegate.h */,
 				BA633D68298195370073763C /* SceneDelegate.m */,
 				BA633D6A298195370073763C /* ViewController.h */,
+				BA7A61DC2981A9B800DC135D /* Cart.swift */,
 				BA633D6B298195370073763C /* ViewController.m */,
 				BA633D6D298195370073763C /* Main.storyboard */,
+				BA7A61D129819DF900DC135D /* TableViewCell.h */,
+				BA7A61D229819DF900DC135D /* TableViewCell.m */,
+				BA7A61D329819DF900DC135D /* TableViewCell.xib */,
 				BA633D702981953B0073763C /* Assets.xcassets */,
 				BA633D722981953B0073763C /* LaunchScreen.storyboard */,
 				BA633D752981953B0073763C /* Info.plist */,
 				BA633D762981953B0073763C /* main.m */,
+				BA633D7D2981958D0073763C /* Product.h */,
+				BA633D7E2981981D0073763C /* Product.m */,
+				BA7A61DB2981A9B700DC135D /* objc-Bridging-Header.h */,
 			);
 			path = objc;
 			sourceTree = "<group>";
@@ -107,6 +125,7 @@
 				TargetAttributes = {
 					BA633D60298195370073763C = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -134,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA633D742981953B0073763C /* LaunchScreen.storyboard in Resources */,
+				BA7A61D529819DF900DC135D /* TableViewCell.xib in Resources */,
 				BA633D712981953B0073763C /* Assets.xcassets in Resources */,
 				BA633D6F298195370073763C /* Main.storyboard in Resources */,
 			);
@@ -146,7 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA7A61D429819DF900DC135D /* TableViewCell.m in Sources */,
 				BA633D6C298195370073763C /* ViewController.m in Sources */,
+				BA633D7F2981981D0073763C /* Product.m in Sources */,
+				BA7A61DD2981A9B800DC135D /* Cart.swift in Sources */,
 				BA633D66298195370073763C /* AppDelegate.m in Sources */,
 				BA633D772981953B0073763C /* main.m in Sources */,
 				BA633D69298195370073763C /* SceneDelegate.m in Sources */,
@@ -290,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -307,6 +331,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.grygol.objc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "objc/objc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -316,6 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -333,6 +361,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.grygol.objc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "objc/objc-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
